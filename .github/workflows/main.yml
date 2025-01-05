@@ -13,12 +13,12 @@ jobs:
       - name: Generate deployment package
         run: zip -r deploy.zip . -x '*.git*'
 
-      - name: Deploy to EB
-        uses: einaregilsson/beanstalk-deploy@v18
-        with:
-          application_name: frondend
-          environment_name: Frondend-env
-          existing_bucket_name: elasticbeanstalk-us-east-2-811913508962
-          region: us-east-2
-          version_label: ${{ github.sha }}
-          deployment_package: deploy.zip
+#      - name: Deploy to EB
+#        uses: einaregilsson/beanstalk-deploy@v18
+#        with:
+#          application_name: frondend
+#          environment_name: Frondend-env
+#          existing_bucket_name: elasticbeanstalk-us-east-2-811913508962
+#          region: us-east-2
+#          version_label: ${{ github.sha }}
+#          deployment_package: deploy.zip

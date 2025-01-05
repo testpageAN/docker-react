@@ -17,7 +17,7 @@ jobs:
         uses: einaregilsson/beanstalk-deploy@v18
         with:
           application_name: frondend
-          environment_name: frondend-env
+          environment_name: Frondend-env
           existing_bucket_name: elasticbeanstalk-us-east-2-811913508962
           region: us-east-2
           version_label: ${{ github.sha }}
